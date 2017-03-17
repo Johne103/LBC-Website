@@ -7,8 +7,8 @@ const router = require('./config/routes');
 const app = express();
 const port = process.env.PORT || 8000;
 
-app.set("view engine" , "ejs");
-app.set("views", `${__dirname}/views`);
+app.set('view engine' , 'ejs');
+app.set('views', `${__dirname}/views`);
 app.use(expressLayouts);
 
 app.use(express.static(`${__dirname}/public`));
